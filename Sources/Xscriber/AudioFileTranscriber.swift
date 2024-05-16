@@ -75,4 +75,11 @@ public final class AudioFileTranscriber: AudioTranscriber {
         }
         self.isTranscribing = true
     }
+    
+    /// Resets to the default state.
+    public func reset() {
+        isTranscribing = false
+        error = nil
+        transcriptionText = nil
+    }
 }

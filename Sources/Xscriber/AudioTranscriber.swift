@@ -37,5 +37,8 @@ public protocol AudioTranscriber {
     /// - Parameter fileURL: The URL of the file to be transcribed.
     /// - Throws: `TranscriberError`
     func transcribe(fileURL: URL) throws
+    
+    /// Resets to the default state.
+    func reset()
 }
 

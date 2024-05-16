@@ -14,4 +14,5 @@ public struct DoNothingAudioTranscriber: AudioTranscriber {
     public init() throws { }
     public func requestPermission() { }
     public func transcribe(fileURL: URL) throws { }
+    public func reset() { }
 }
